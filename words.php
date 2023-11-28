@@ -113,7 +113,7 @@ add_filter( 'the_content', 'renym_words_replace' );
 */
 
 /**
- * Cambia palabras usando base de datos
+ * Cambia palabras usando base de datoss
  * @param $text
  * @return array|string|string[]
  */
