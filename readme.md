@@ -14,9 +14,9 @@ add_filter( 'the_content', 'renym_wordpress_typo_fix' );
 ```
 Este plugin lo que hace es cambiar todas las palabras "WordPress" por "WordPressDAM" en el contenido de la página.<br>
 
-**renym_wordpress_typo_fix**  es el nombre de la función, la cual acepta un parámetro **$text.**<br>
-Dentro de la función, utiliza **str_replace** para reemplazar 'WordPress' por 'WordPressDAM' en el texto proporcionado.
-Por último, en la línea **`add_filter( 'the_content', 'renym_wordpress_typo_fix' );**, agregamos un filtro que se ejecutará cuando se imprima el contenido de WordPress.
+**renym_wordpress_typo_fix** es el nombre de la función, la cual acepta un parámetro **$text.** Dentro de la función, utiliza **str_replace** para reemplazar 'WordPress' por 'WordPressDAM' en el texto proporcionado.
+Por último, en la línea **`add_filter( 'the_content', 'renym_wordpress_typo_fix' );** agregamos un filtro que se ejecutará cuando se imprima el contenido de WordPress.<br>
+
 --------------------
 **PLUGIN 2:**
 ```
@@ -35,5 +35,5 @@ Siendo **renym_words_replace** el nombre de la función/método, el cual acepta 
 - **$palabras :** que contiene las palabras a buscar 
 - **$antonimos :** que contiene las palabras a reemplazar.
 
-Luego utilizamos el  **str_replace** para reemplazar todas las palabras definidas en $palabras con las palabras 
-definidas en el otro array $antonimos. Finalmente, agrega un filtro a **'the_content'**, que se ejecutará cuando se imprima el contenido de WordPress.
+Luego utilizamos el  **str_replace** para reemplazar todas las palabras definidas en *$palabras* con las palabras 
+definidas en el otro array *$antonimos*. Finalmente, agrega un filtro a **'the_content'**, que se ejecutará cuando se imprima el contenido de WordPress.
